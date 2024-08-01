@@ -48,16 +48,17 @@ public class Main {
                     System.out.println("\nCliente cadastrado com sucesso!");
                     break;
                 case 3:
-
-
+                    System.out.print("Informe o número do cliente: ");
+                    int clienteNumber = sc.nextInt();
+                    parking.removeClient(clienteNumber);
 
                     break;
                 case 4:
                     menu = false;
-                    System.out.println("Encerrando...");
+                    System.out.println("\nEncerrando...");
                     break;
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("\nOpção inválida!");
                     break;
             }
 
